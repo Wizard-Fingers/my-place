@@ -38,7 +38,7 @@ const AboutSection = () => {
           className="text-4xl font-bold mb-8 text-yellow-400 text-center"
           variants={itemVariants}
         >
-          About Me
+          About Moi
         </motion.h2>
 
         <motion.div
@@ -50,13 +50,13 @@ const AboutSection = () => {
               Who am I?
             </h3>
             <p className="leading-relaxed">
-              I'm a quirky and creative developer with a passion for building
-              amazing digital experiences. With a background in various fields,
-              I bring a unique perspective to my work, blending technical
-              expertise with artistic flair.
+              I&apos;m a quirky and creative developer with a passion for
+              building amazing digital experiences. With a background in various
+              fields, I bring a unique perspective to my work, blending
+              technical expertise with artistic flair.
             </p>
             <p className="leading-relaxed mt-4">
-              I've been happily married for 13 years and have two wonderful
+              I&apos;ve been happily married for 13 years and have two wonderful
               kids. My family is my constant source of inspiration and joy.
             </p>
           </div>
@@ -93,12 +93,12 @@ const AboutSection = () => {
 
           <div className="bg-gray-800 p-8 rounded-lg shadow-lg">
             <h3 className="text-2xl font-bold mb-4 text-yellow-400">
-              Let's Talk!
+              Let&apos;s Talk!
             </h3>
             <p className="leading-relaxed">
-              I'm always eager to take on new challenges and collaborate with
-              like-minded individuals. Feel free to reach out, and let's create
-              something extraordinary together!
+              I&apos;m always eager to take on new challenges and collaborate
+              with like-minded individuals. Feel free to reach out, and
+              let&apos;s create something extraordinary together!
             </p>
             <button className="bg-yellow-400 text-gray-900 py-2 px-4 rounded-lg mt-4 hover:bg-yellow-500 transition-colors duration-300">
               Contact Me

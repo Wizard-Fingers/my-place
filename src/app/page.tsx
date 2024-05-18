@@ -9,7 +9,7 @@ import Image from "next/image";
 import Timeline from "@/components/Timeline";
 import TimelinePic from "@/components/TimelinePic";
 import AboutSection from "@/components/AboutSection";
-import ProjectSlider from "@/components/ProjectSlider";
+import ProjectCard from "@/components/ProjectCard";
 // Timeline info
 const events = [
   {
@@ -79,18 +79,29 @@ const events = [
     date: "February 2003 - September 2007",
   },
 ];
-const projectData = [
+const projectsData = [
   {
-    image: { GreenArrow },
-    technologies: ["React", "Node.js", "MongoDB"],
-    collaboration: true,
+    title: "Project 1",
+    description: "Description of Project 1",
+    technologies: ["React", "Tailwind", "Framer Motion"],
+    image: GreenArrow,
+    isCollaborative: true,
   },
   {
-    image: { GreenArrow },
-    technologies: ["Python", "Django", "PostgreSQL"],
-    collaboration: false,
+    title: "Project 1",
+    description: "Description of Project 1",
+    technologies: ["React", "Tailwind", "Framer Motion"],
+    image: GreenArrow,
+    isCollaborative: true,
   },
-  // Add more project data here
+  {
+    title: "Project 1",
+    description: "Description of Project 1",
+    technologies: ["React", "Tailwind", "Framer Motion"],
+    image: GreenArrow,
+    isCollaborative: true,
+  },
+  // Add more project objects as needed
 ];
 export default function Home() {
   return (
@@ -126,7 +137,18 @@ export default function Home() {
             </div>
             <SquigglyLine color="#FFD700" />
           </section>
-
+          {/* Section three About me */}
+          <section className="home-section bg-brandCol1 shadow-lg border-t-4 border-b-4 border-black items-center">
+            <div className=" justify-center py-[4rem] hidden lg:flex">
+              <div className=" w-[80%] h-[5px] bg-brandCol2 rounded-sm" />
+            </div>
+            <div>
+              <AboutSection />
+            </div>
+            <div className=" justify-center py-[4rem] hidden lg:flex">
+              <div className=" w-[80%] h-[5px] bg-brandCol2 rounded-sm" />
+            </div>
+          </section>
           <section className="home-section dot-grid">
             {/* Section two Timeline and Review */}
             <div>
@@ -155,32 +177,10 @@ export default function Home() {
               </div>
             </div>
           </section>
-          {/* Section three About me */}
-          <section className="home-section bg-brandCol1 shadow-lg border-t-4 border-b-4 border-black items-center">
-            <div className=" justify-center py-[4rem] hidden lg:flex">
-              <div className=" w-[80%] h-[5px] bg-brandCol2 rounded-sm" />
-            </div>
-            <div>
-              <AboutSection />
-            </div>
-            <div className=" justify-center py-[4rem] hidden lg:flex">
-              <div className=" w-[80%] h-[5px] bg-brandCol2 rounded-sm" />
-            </div>
-          </section>
+
           <section className="home-section graph-paper">
-            <div>
-              <ProjectSlider projects={projectData} />
-            </div>
-          </section>
-          <section className="home-section">
-            <div>
-              <h2>fith section</h2>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Architecto fugiat, labore facilis, commodi laudantium natus est
-                quas porro nisi incidunt inventore sit impedit. Vitae numquam
-                enim voluptates assumenda aspernatur animi!
-              </p>
+            <div className="flex justify-center items-center">
+              <ProjectCard projects={projectsData} />
             </div>
           </section>
         </div>
