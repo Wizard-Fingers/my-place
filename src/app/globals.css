@@ -2,26 +2,128 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+/* fonts used */
+@font-face {
+  font-family: "Blanka";
+  src: url("../../public/fonts/Blanka-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+@font-face {
+  font-family: "Open Dyslexic Regular";
+  src: url("../../public/fonts/OpenDyslexic-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Dyslexic Bold";
+  src: url("../../public/fonts/OpenDyslexic-Bold.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Dyslexic Alta Regular";
+  src: url("../../public/fonts/OpenDyslexicAlta-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Dyslexic Alta Bold";
+  src: url("../../public/fonts/OpenDyslexicAlta-Bold.otf") format("opentype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Open Dyslexic Mono Regular";
+  src: url("../../public/fonts/OpenDyslexicMono-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* font classes passed to tailwind */
+.font-blanka {
+  font-family: "Blanka", sans-serif;
+}
+
+.font-open-dyslexic {
+  font-family: "Open Dyslexic Regular", sans-serif;
+}
+
+.font-open-dyslexic-bold {
+  font-family: "Open Dyslexic Bold", sans-serif;
+}
+
+.font-open-dyslexic-alta {
+  font-family: "Open Dyslexic Alta Regular", sans-serif;
+}
+
+.font-open-dyslexic-alta-bold {
+  font-family: "Open Dyslexic Alta Bold", sans-serif;
+}
+
+.font-open-dyslexic-mono {
+  font-family: "Open Dyslexic Mono Regular", sans-serif;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: black;
+  overflow: hidden;
+}
+
+/* home custom CSS */
+.home-container {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
+  scroll-snap-type: y proximity;
+}
+
+.home-section {
+  min-height: 100vh; /* Change height to min-height */
+  scroll-snap-align: start;
+  padding: 2rem 0; /* Add padding to create space between sections */
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 5px; /* Width of the scrollbar */
+}
+
+/* Track (background behind the thumb) */
+::-webkit-scrollbar-track {
+  background-color: transparent; /* Make the track transparent */
+}
+
+/* Thumb (the draggable part) */
+::-webkit-scrollbar-thumb {
+  background-color: #00a7e1; /* Set the color of the thumb to white */
+  border-radius: 2px; /* Add some border radius for a smoother look */
+  transition: background-color 0.5s ease; /* Add transition for smooth color change */
+}
+
+/* Thumb on hover */
+::-webkit-scrollbar-thumb:hover {
+  background-color: #f6f6f6; /* Slightly darker color on hover */
+}
+/* graph paper */
+.graph-paper {
+  background-color: white;
+  background-image: linear-gradient(rgba(43, 43, 43, 0.1) 2px, transparent 2px),
+    linear-gradient(90deg, rgba(43, 43, 43, 0.1) 2px, transparent 2px);
+  background-size: 42px 42px;
+  background-position: -5px -5px;
+  background-attachment: fixed;
+}
+
+.dot-grid {
+  background-image: url("../../public/dot-grid.png");
+  background-repeat: repeat;
+  background-size: auto;
+  background-position: center;
+  background-attachment: scroll;
 }
