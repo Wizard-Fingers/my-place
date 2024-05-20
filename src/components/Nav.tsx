@@ -9,10 +9,9 @@ const Nav = () => {
           <div className="md:ml-[5rem]">
             <Logo />
           </div>
-          <div className="hidden md:flex">
-            <div className="md:mr-[5rem]">
-              <Socials />
-            </div>
+
+          <div className="md:mr-[5rem]">
+            <Socials />
           </div>
         </div>
       </div>

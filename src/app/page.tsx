@@ -4,12 +4,15 @@ import Rom from "../../public/rom.png";
 import Emily from "../../public/emily.png";
 import SquigglyLine from "@/components/ui/SquigglyLine";
 import TeaSpill from "../../public/tea-spill.png";
-import GreenArrow from "../../public/green-arrow.png";
-import Image from "next/image";
+import Head from "next/head";
 import Timeline from "@/components/Timeline";
 import TimelinePic from "@/components/TimelinePic";
 import AboutSection from "@/components/AboutSection";
 import ProjectCard from "@/components/ProjectCard";
+import RockingPicture from "@/components/ui/RockingPicture";
+import OffRoadFunFinder from "../../public/offRaodFunFinder.png";
+import Oberweis from "../../public/oberweis.png";
+import FurryTails from "../../public/furryTails.webp";
 // Timeline info
 const events = [
   {
@@ -81,61 +84,105 @@ const events = [
 ];
 const projectsData = [
   {
-    title: "Project 1",
-    description: "Description of Project 1",
-    technologies: ["React", "Tailwind", "Framer Motion"],
-    image: GreenArrow,
+    title: "Off Road Fun Finder",
+    description:
+      "Off Road Fun Finder was my first taste of the real world coding adventure! I jumped headfirst into the Joy of Coding, flexing my frontend muscles by crafting the sign-in forms, product info, and even the admin panel for updating the site. But that's not all – I got to flex my creative chops by designing the logo and collaborating with other developers who were way ahead of me on the journey. It was a wild ride, and Off Road Fun Finder will always hold a special place in my coding heart!",
+    technologies: [
+      "React",
+      "React Router",
+      "MUI",
+      "Google Maps",
+      "Django",
+      "Typescript",
+    ],
+    image: OffRoadFunFinder,
     isCollaborative: true,
+    url: "https://offroadfunfinder.com/",
   },
   {
-    title: "Project 1",
-    description: "Description of Project 1",
-    technologies: ["React", "Tailwind", "Framer Motion"],
-    image: GreenArrow,
-    isCollaborative: true,
+    title: "Oberweis Dairy",
+    description:
+      "This project was a wild ride that came my way through a good buddy, and boy, was it a thrill! I got to dive deep into the frontend waters, crafting the site's interface and the admin panel. But that's not all – I also flexed my SEO muscles and optimized the site for Google Analytics, ensuring maximum visibility.Of course, I made sure the site loaded like a dream and looked sharp on those tiny mobile screens too! Now, I won't take all the credit for the stunning visuals – the design wizards had that covered. But being a part of shaping this project from the ground up was an absolute blast.",
+    technologies: [
+      "React",
+      "React Router",
+      "Redux",
+      "BootStrap",
+      "Google Analytics",
+      "ExpressJS",
+    ],
+    image: Oberweis,
+    isCollaborative: false,
+    url: "https://www.oberweis.com/",
   },
   {
-    title: "Project 1",
-    description: "Description of Project 1",
-    technologies: ["React", "Tailwind", "Framer Motion"],
-    image: GreenArrow,
-    isCollaborative: true,
+    title: "Furry Tails Pet Grooming",
+    description:
+      "Buckle up, because this one was a wild ride! I had to take on the challenge of duplicating a WordPress website that had been their trusty steed for years. But here's the kicker – they wanted to keep the same assets and look, which meant I had to get crafty. Let me tell you, this project was a true test of my communication skills. It involved a lot of back-and-forth, but hey, that's all part of the game! And you know what? I wouldn't have had it any other way because it taught me the invaluable lesson of just how crucial clear communication is in our line of work. But that's not all, folks! This project also gave me the chance to be a part of the awesome team at Furry Tails, and let me tell you, it was an absolute blast.",
+    technologies: ["React", "Bootstrap", "Sanity", "React Router"],
+    image: FurryTails,
+    isCollaborative: false,
+    url: "https://www.furrytailspetgrooming.com/",
   },
   // Add more project objects as needed
 ];
 export default function Home() {
   return (
     <>
+      <Head>
+        <link
+          rel="icon"
+          href="/favicon-512x512.png"
+          sizes="512x512"
+          type="image/png"
+        />
+        <link
+          rel="icon"
+          href="/favicon-256x256.png"
+          sizes="256x256"
+          type="image/png"
+        />
+        <link
+          rel="icon"
+          href="/favicon-128x128.png"
+          sizes="128x128"
+          type="image/png"
+        />
+      </Head>
       <div className="text-brandCol1">
         <div className="home-container">
           {/* section one intro hero and review */}
           <section className="home-section">
             {/* hero/intro */}
-            <div className="">
+            <div className="p2">
               <Hero />
             </div>
             {/* line */}
             <div className=" justify-center py-[4rem] hidden lg:flex">
               <div className=" w-[80%] h-[5px] bg-brandCol1 rounded-sm" />
             </div>
-            <p className="text-center font-open-dyslexic-alta-bold text-xl">
-              Guess who spilled the Tea. Come and Hear what Emily said about
-              me...
-            </p>
-            <div className="flex justify-center items-center pt-[4rem]">
-              <Review
-                name="Dr Emily Hill"
-                title="Founder of the Joy of Coding Academy"
-                picture={Emily}
-                content="Arthur Beckett excels as a Frontend Web Developer. His work ethic and attention to detail produce high-quality websites with consistent user interfaces. Arthur's expertise with style sheets is particularly impressive. Beyond technical skills, he collaborates effectively and supports colleagues. Arthur's dedication, talent, and team-oriented approach make him a valuable asset. He would be a strong addition to any web development team."
-                linkedinUrl="https://www.linkedin.com/in/emily-hill-6921b92/"
-              />
-            </div>
 
-            <div className="flex justify-center">
-              <Image src={TeaSpill} alt="tea spill" />
-            </div>
-            <SquigglyLine color="#FFD700" />
+            <section className="graph-paper pt-[4rem] -mb-[2.1rem]">
+              <p className="text-center font-open-dyslexic-alta-bold text-xl text-brandCol6">
+                Guess who spilled the Tea. Come and Hear what Emily said about
+                me...
+              </p>
+              <div className="flex justify-center items-center py-[4rem]">
+                <Review
+                  name="Dr Emily Hill"
+                  title="Founder of the Joy of Coding Academy"
+                  picture={Emily}
+                  content="Arthur Beckett excels as a Frontend Web Developer. His work ethic and attention to detail produce high-quality websites with consistent user interfaces. Arthur's expertise with style sheets is particularly impressive. Beyond technical skills, he collaborates effectively and supports colleagues. Arthur's dedication, talent, and team-oriented approach make him a valuable asset. He would be a strong addition to any web development team."
+                  linkedinUrl="https://www.linkedin.com/in/emily-hill-6921b92/"
+                />
+              </div>
+
+              <div className="flex justify-center">
+                {/* <Image src={TeaSpill} alt="tea spill" /> */}
+                <RockingPicture imageUrl={TeaSpill} altText="tea spill" />
+              </div>
+              <SquigglyLine color="#0B08C6" />
+            </section>
           </section>
           {/* Section three About me */}
           <section className="home-section bg-brandCol1 shadow-lg border-t-4 border-b-4 border-black items-center">
@@ -154,10 +201,8 @@ export default function Home() {
             <div>
               <div className="container mx-auto">
                 <Timeline events={events} />
-                <p className="text-brandCol2 text-center font-open-dyslexic-alta-bold text-xl">
-                  Guess who dropped the{" "}
-                  <span className="text-[#0B08C6]">ball!</span>
-                  <br />
+                <p className="text-brandCol6 text-center font-open-dyslexic-alta-bold text-xl">
+                  Guess who dropped the ball! <br />
                   Come and hear Romualdo tell it all...
                 </p>
                 <div className="flex justify-center items-center pt-[4rem]">
@@ -178,11 +223,28 @@ export default function Home() {
             </div>
           </section>
 
-          <section className="home-section graph-paper">
+          <section className="home-section graph-paper border-t border-brandCol2">
             <div className="flex justify-center items-center">
               <ProjectCard projects={projectsData} />
             </div>
           </section>
+          <footer className="bg-brandCol2 text-brandCol1 py-4">
+            <div className="container mx-auto px-4">
+              <div className="flex flex-col md:flex-row justify-between items-center">
+                <div className="text-center md:text-left font-open-dyslexic-bold">
+                  <p>
+                    &copy; {new Date().getFullYear()} Made by Art Beckett. All
+                    rights reserved.
+                  </p>
+                </div>
+                <div className="text-center md:text-right mt-4 md:mt-0 font-open-dyslexic-bold">
+                  <p>Contact:</p>
+                  <p>Email: art.b.beckett@gmail.com</p>
+                  <p>Phone: +44 7925 578819</p>
+                </div>
+              </div>
+            </div>
+          </footer>
         </div>
       </div>
     </>

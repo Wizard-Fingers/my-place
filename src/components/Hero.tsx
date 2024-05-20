@@ -41,7 +41,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="flex flex-col lg:flex-row items-center justify-center">
+    <section className="flex flex-col lg:flex-row items-center justify-center mt-[5rem]">
       {/* profile pic */}
       <div className="relative w-full lg:w-1/2 mb-8 lg:mb-0">
         <div className="max-w-[80%] mx-auto lg:max-w-[60%] p-2 lg:p-4 lg:cursor-pointer bg-brandCol1">
@@ -82,7 +82,7 @@ const Hero = () => {
         </div>
       </div>
       {/* Hero Text */}
-      <div className="w-full lg:w-1/2 px-4 ">
+      <div className="w-full lg:w-1/2 p-4 ">
         <h1 className="font-blanka text-4xl lg:text-7xl mb-4 text-brandCol4 lg:mb-[2rem] tracking-wider">
           Hello There!
         </h1>

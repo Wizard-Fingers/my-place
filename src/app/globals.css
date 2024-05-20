@@ -72,7 +72,7 @@
 
 body {
   background-color: black;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 /* home custom CSS */
@@ -101,7 +101,7 @@ body {
 
 /* Thumb (the draggable part) */
 ::-webkit-scrollbar-thumb {
-  background-color: #00a7e1; /* Set the color of the thumb to white */
+  background-color: #7fff00; /* Set the color of the thumb to white */
   border-radius: 2px; /* Add some border radius for a smoother look */
   transition: background-color 0.5s ease; /* Add transition for smooth color change */
 }

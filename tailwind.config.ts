@@ -14,6 +14,7 @@ const config: Config = {
         brandCol3: "#00A7E1", // Electric blue
         brandCol4: "#7FFF00", // Lively green
         brandCol5: "#4CBB17", // Complementary green
+        brandCol6: "#0B08C6", // Royal blue
       },
     },
   },

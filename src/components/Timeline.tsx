@@ -42,16 +42,16 @@ const Timeline: React.FC<TimelineProps> = ({ events }) => {
           {events.map((event, index) => (
             <motion.div
               key={index}
-              className="p-4 border-l-4 border-brandCol3 bg-black shadow-lg rounded-sm items-center"
+              className="p-4 border-l-4 border-brandCol3 bg-brandCol1 shadow-lg rounded-sm items-center"
               variants={itemVariants}
             >
               <div className="flex justify-center items-center h-full">
-                <div className="p-4 bg-brandCol2 shadow-lg">
+                <div className="p-4 bg-brandCol2 shadow-lg rounded-sm">
                   <div className="flex flex-col">
                     <h3 className="text-2xl font-semibold text-brandCol4 font-open-dyslexic-alta-bold mb-2 lg:mb-0">
                       {event.title}
                     </h3>
-                    <p className="text-brandCol3 font-open-dyslexic-alta-bold">
+                    <p className="text-brandCol3 font-open-dyslexic-alta-bold mt-4">
                       {event.date}
                     </p>
                   </div>

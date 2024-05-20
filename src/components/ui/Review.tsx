@@ -58,7 +58,7 @@ const Review: React.FC<ReviewProps> = ({
         className="bg-brandCol3 text-white text-xl px-8 py-4 rounded-sm font-open-dyslexic-bold"
         onClick={toggleReview}
       >
-        A Review
+        A Review About me
       </motion.button>
       <AnimatePresence>
         {isOpen && (
@@ -86,13 +86,19 @@ const Review: React.FC<ReviewProps> = ({
                   whileHover={{ rotate: 360 }}
                   transition={{ duration: 0.5 }}
                 >
-                  <Image
-                    src={picture}
-                    alt={name}
-                    width={96}
-                    height={96}
-                    className="rounded-full"
-                  />
+                  <Link
+                    href={linkedinUrl}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Image
+                      src={picture}
+                      alt={name}
+                      width={96}
+                      height={96}
+                      className="rounded-full"
+                    />
+                  </Link>
                 </motion.div>
                 <motion.div
                   className="text-center sm:text-left"
