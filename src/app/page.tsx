@@ -1,18 +1,18 @@
 import Hero from "../components/Hero";
 import Review from "@/components/ui/Review";
-import Rom from "../../public/rom.png";
-import Emily from "../../public/emily.png";
+import Rom from "/public/rom.png";
+import Emily from "/public/emily.png";
 import SquigglyLine from "@/components/ui/SquigglyLine";
-import TeaSpill from "../../public/tea-spill.png";
+import TeaSpill from "/public/tea-spill.png";
 import Head from "next/head";
 import Timeline from "@/components/Timeline";
 import TimelinePic from "@/components/TimelinePic";
 import AboutSection from "@/components/AboutSection";
 import ProjectCard from "@/components/ProjectCard";
 import RockingPicture from "@/components/ui/RockingPicture";
-import OffRoadFunFinder from "../../public/offRaodFunFinder.png";
-import Oberweis from "../../public/oberweis.png";
-import FurryTails from "../../public/furryTails.webp";
+import OffRoadFunFinder from "/public/offRaodFunFinder.png";
+import Oberweis from "/public/oberweis.png";
+import FurryTails from "/public/furryTails.webp";
 const events = [
   {
     title: "Jr Developer",
