@@ -13,7 +13,6 @@ import RockingPicture from "@/components/ui/RockingPicture";
 import OffRoadFunFinder from "../../public/offRaodFunFinder.png";
 import Oberweis from "../../public/oberweis.png";
 import FurryTails from "../../public/furryTails.webp";
-// Timeline info
 const events = [
   {
     title: "Jr Developer",
@@ -151,13 +150,10 @@ export default function Home() {
       </Head>
       <div className="text-brandCol1">
         <div className="home-container">
-          {/* section one intro hero and review */}
           <section className="home-section">
-            {/* hero/intro */}
             <div className="p2">
               <Hero />
             </div>
-            {/* line */}
             <div className=" justify-center py-[4rem] hidden lg:flex">
               <div className=" w-[80%] h-[5px] bg-brandCol1 rounded-sm" />
             </div>
@@ -178,7 +174,6 @@ export default function Home() {
               </div>
 
               <div className="flex justify-center">
-                {/* <Image src={TeaSpill} alt="tea spill" /> */}
                 <RockingPicture imageUrl={TeaSpill} altText="tea spill" />
               </div>
               <SquigglyLine color="#0B08C6" />
