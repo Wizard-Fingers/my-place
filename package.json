@@ -1,5 +1,5 @@
 {
-  "name": "my-place",
+  "name": "artbeckett",
   "version": "0.1.0",
   "private": true,
   "scripts": {
@@ -10,7 +10,7 @@
   },
   "dependencies": {
     "framer": "^2.4.1",
-    "framer-motion": "^11.2.2",
+    "framer-motion": "^10.13.1",
     "motion": "^10.17.0",
     "next": "latest",
     "react": "latest",
