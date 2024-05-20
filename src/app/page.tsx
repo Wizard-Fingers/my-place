@@ -11,8 +11,8 @@ import AboutSection from "@/components/AboutSection";
 import ProjectCard from "@/components/ProjectCard";
 import RockingPicture from "@/components/ui/RockingPicture";
 import OffRoadFunFinder from "/public/offRaodFunFinder.png";
-import Oberweis from "/public/oberweis.png";
-import FurryTails from "/public/furryTails.png";
+import Oberweis from "../../public/OberweisDairy.png";
+import FurryTails from "../../public/furry-tails.png";
 const events = [
   {
     title: "Jr Developer",
