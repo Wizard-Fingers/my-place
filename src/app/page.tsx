@@ -12,7 +12,7 @@ import ProjectCard from "@/components/ProjectCard";
 import RockingPicture from "@/components/ui/RockingPicture";
 import OffRoadFunFinder from "/public/offRaodFunFinder.png";
 import Oberweis from "/public/oberweis.png";
-import FurryTails from "/public/furryTails.webp";
+import FurryTails from "/public/furryTails.png";
 const events = [
   {
     title: "Jr Developer",
