@@ -82,7 +82,7 @@ const Projects: React.FC<ProjectsProps> = ({ projects }) => {
         </h2>
         <section className=" p-4 rounded-sm">
           <div className="bg-gray-800 rounded-sm mb-[4rem] p-4 border-2 border-brandCol1 font-open-dyslexic text-lg lg:text-xl leading-relaxed ">
-            <p className="text-gray-300 text-center font-open-dyslexic px-6 lg:text-xl">
+            <p className="text-brandCol1 text-center font-open-dyslexic px-6 lg:text-xl">
               Hey there, fellow coding enthusiasts! I&apos;m stoked to share
               some of the awesome projects I&apos;ve been working on. Now, this
               isn&apos;t an exhaustive list – these are just a few that my

@@ -80,13 +80,18 @@ body {
   height: 100vh;
   overflow-y: scroll;
   scroll-behavior: smooth;
-  scroll-snap-type: y proximity;
 }
+@media (min-width: 768px) {
+  /* Apply scroll snapping only on larger screens */
+  .home-container {
+    scroll-snap-type: y proximity;
+  }
 
-.home-section {
-  min-height: 100vh; /* Change height to min-height */
-  scroll-snap-align: start;
-  padding: 2rem 0; /* Add padding to create space between sections */
+  .home-section {
+    min-height: 100vh;
+    scroll-snap-align: start;
+    padding: 2rem 0;
+  }
 }
 
 /* Custom Scrollbar */
